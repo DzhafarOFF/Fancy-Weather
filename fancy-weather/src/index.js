@@ -1,5 +1,6 @@
 import GetWeatherData from './components/getWeatherData/getWeatherData';
 import CreateDom from './components/createDom/createDom';
+import './css/index.scss';
 
 const keyLocation = '82d85c7144b574';
 const keyWeather = '45362111f590b80880d91dba3cb5bd2b';
