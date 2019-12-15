@@ -13,11 +13,11 @@ body{
     display: grid;
     color: $base-color;
     grid-template-columns: repeat(4, 1fr);
-    // grid-auto-rows: minmax(250px, auto);
+     grid-auto-rows: minmax(250px, auto);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-      "cur cur cur cur"
-      "day day day day";
+      "cur cur map map"
+      "day day map map";
     
 }
 
@@ -81,4 +81,9 @@ body{
         width: 150px;
         height: auto;
     }
+}
+
+#map{
+    width: 300px;
+    height: 300px;
 }
