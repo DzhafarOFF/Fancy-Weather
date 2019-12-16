@@ -11,9 +11,9 @@ export default class GetWeatherData{
         //return location;
     }
 
-    getWeather(location){
+    getWeather(location, units = 'us', language = 'en-US'){
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-        return fetch(`${proxyUrl}https://api.darksky.net/forecast/${this.keyWeather}/${location}`).then(response => response.json());
+        return fetch(`${proxyUrl}https://api.darksky.net/forecast/${this.keyWeather}/${location}?units=${units}&lang=${language}`).then(response => response.json());
         //const weather = await response.json();
         //return weather;
     }

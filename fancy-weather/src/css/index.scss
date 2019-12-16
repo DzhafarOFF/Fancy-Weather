@@ -1,4 +1,4 @@
-$base-color: grey;
+$base-color: #131313;
 $base-font-size: 15px;
 $base-font-family:monospace;
 @mixin set-font($size){
@@ -7,7 +7,7 @@ $base-font-family:monospace;
 
 body{
     font-family: $base-font-family;
-    height: 100vh;
+    height: 1000px;
     margin: 0;
     padding: 20px;
     display: grid;
