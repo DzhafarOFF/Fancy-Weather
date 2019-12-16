@@ -7,7 +7,10 @@ export default (keyMap, location) => {
     console.log(locArr);
     let wrapper = document.createElement('div');
     wrapper.id = 'map';
+    let coordinates = document.createElement('div');
+    coordinates.id ='info';
     document.body.appendChild(wrapper);
+    document.body.appendChild(coordinates);
     mapboxgl.accessToken = keyMap;
     const map = new mapboxgl.Map({
         container: 'map',
@@ -15,4 +18,9 @@ export default (keyMap, location) => {
         center: [longitude, latitude],
         zoom: 9
     });
+
+    map.on('mousemove', function(e) {
+        document.getElementById('info').innerHTML = `Longitude: ${e.lngLat["lng"].toFixed(2)} <br>
+                                                     Latitude: ${e.lngLat["lat"].toFixed(2)}`;
+        });
 }
