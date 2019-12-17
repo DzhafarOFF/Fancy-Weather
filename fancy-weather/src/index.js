@@ -5,7 +5,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import setMap from './components/map/map';
 import getImage from './components/BackImage/getImage';
 import setImage from './components/BackImage/setImage';
-import Controlers from './components/controlers/controlers';
 
 const keyLocation = '82d85c7144b574';
 const keyWeather = '45362111f590b80880d91dba3cb5bd2b';
