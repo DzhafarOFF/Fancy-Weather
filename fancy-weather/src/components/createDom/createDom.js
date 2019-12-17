@@ -28,7 +28,7 @@ export default class CreateDom {
         currentDOM.appendChild(temperatureDOM);
 
         let iconDOM = document.createElement('div');
-        iconDOM.innerHTML = `<img src="../src/assets/icons/${this.current.icon}.svg">`;
+        iconDOM.innerHTML = `<img src="./icons/${this.current.icon}.svg">`;
         iconDOM.classList.add('current__icon');
         currentDOM.appendChild(iconDOM);
 
@@ -74,7 +74,7 @@ export default class CreateDom {
             wrapper.appendChild(temperatureDOM);
             
             let iconDOM = document.createElement('div');
-            iconDOM.innerHTML = `<img src="../src/assets/icons/${this.daily[i].icon}.svg">`;
+            iconDOM.innerHTML = `<img src="./icons/${this.daily[i].icon}.svg">`;
             iconDOM.classList.add('daily__icon');
             wrapper.appendChild(iconDOM);
 
